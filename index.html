@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Carousel Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- My Styles -->
+  <link href="css/main.css" rel="stylesheet">
+
+  <!-- Owl Carousel Styles -->
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>Carousel Demo</h1>
+    </header>
+
+    <div class="owl-carousel owl-theme">
+      <div><img src="img/breadsticks.jpg" alt="Breadsticks"></div>
+      <div><img src="img/hawaiian_pizza.jpg" alt="Hawaiian Pizza"></div>
+      <div><img src="img/mozzarella_sticks.jpg" alt="Mozzarella Sticks"></div>
+      <div><img src="img/potato_soup.jpg" alt="Potato Soup"></div>
+      <div><img src="img/salad.jpg" alt="Salad"></div>
+    </div>
+
+    <footer>
+      This image slider is made using <a href="https://owlcarousel2.github.io/OwlCarousel2/">Owl Carusel 2</a>. See the official docs for more options.
+    </footer>
+
+  </div>
+
+  <!-- first load jquery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <!-- owl carousel stuff -->
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+          dots: true,
+          items: 1,
+          loop: true,
+          margin: 10,
+          nav: true
+      })
+    });
+  </script>
+
+</body>
+</html>
